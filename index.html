@@ -8,16 +8,16 @@
 </head>
 <body>
   <header>
-    <div class="Container">
-        <div class="miniContainer">
+    <div class="navContainer">
+        <div class="logo miniContainer">
             <img src="image/Group 40071 (2).png" alt="Image description">
             <p>Tourify</p>
-            <p>Hub</p>
+            <p class="hub">Hub</p>
         </div>
         <div>
             <nav>
                 <ul class="miniContainer">
-                  <li><a href="#">Home</a></li>
+                  <li><a href="#" class="hub">Home</a></li>
                   <li><a href="#">Packages</a></li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Contact</a></li>
@@ -28,33 +28,37 @@
     </div>
     </header>
     <div class="fromContainer">
-        <h3>
-            Explore Your Travel
-        </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consectetur commodi delectus pariatur voluptatum dolores dolore perferendis vel natus laborum nemo velit veritatis incidunt non necessitatibus? Officia aliquid doloremque eius.</p>
-
-        <form class="form">
-            <input type="text" id="name" name="name" placeholder="Where go">
-        
-            <input type="date" id="date" name="date" placeholder="When">
-        
-            <input type="text" id="destination" name="destination" placeholder="Select Type">
-        
-            <button type="submit">Submit Inquiry</button>
-        </form>
+        <div class="formItem">
+            <h3>
+                Explore Your Travel
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, consectetur commodi delectus pariatur voluptatum dolores dolore perferendis vel natus laborum nemo velit veritatis incidunt non necessitatibus? Officia aliquid doloremque eius.</p>
+    
+            <form class="form">
+                <input type="text" id="name" name="name" placeholder="Where go">
+            
+                <input type="text" id="date" name="date" placeholder="When">
+            
+                <input type="text" id="destination" name="destination" placeholder="Select Type">
+            
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
     </div>
 
   <main>
-    <section class="miniContainer">
-        <div>
+    <section class="popularTour">
+        <div class="popular">
             <h1>Our Popular Tour</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum et. Reprehenderit vitae labore quis eaque reiciendis provident doloremque laborum incidunt porro numquam ad iure adipisci laudantium beatae, ipsa, et non atque magni, id quaerat sit? Quam soluta ab maiores.
             </p>
             <button>Read More</button>
         </div>
-        <div>
-            <img src="image/Rectangle 4.png" alt="">
+        <div class="paddingLeft">
+            <div >
+                <img src="image/Rectangle 4.png" alt="">
+            </div>   
         </div>
       </section>
     <section>
@@ -111,6 +115,105 @@
               <p>Amet consectetur adipiscing elit, pulvinar vel risus eget tempor. Mauris blandit aliquam ipsum vel pulvinar.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="container">
+          <h2>A Simple Perfect Place <br> To Get Lost</h2>
+          <p>Amet consectetur adipiscing elit, pulvinar vel risus eget tempor. Mauris blandit aliquam ipsum vel pulvinar.</p>
+          <button class="explore-btn">Explore More</button>
+        </div>
+      </section>
+
+      <section class="hero">
+        <h2>Explore the Beauty of Nature</h2>
+        <p>Experience unforgettable adventures with our curated tours.</p>
+        <button>Learn More</button>
+      </section>
+    
+      <section class="tours">
+        <h2>Popular Tours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Destination</th>
+              <th>Duration</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mountain Hiking</td>
+              <td>5 Days</td>
+              <td>$1,200</td>
+            </tr>
+            <tr>
+              <td>Island Getaway</td>
+              <td>7 Days</td>
+              <td>$1,500</td>
+            </tr>
+            <tr>
+              <td>Wildlife Safari</td>
+              <td>10 Days</td>
+              <td>$2,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h3>Why Choose Us</h3>
+          <div class="about-card-container">
+            <div class="about-card">
+              <img src="image1.jpg" alt="Handpicked Hotels">
+              <h4>Handpicked Hotels</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+            <div class="about-card">
+              <img src="image2.jpg" alt="World Class Service">
+              <h4>World Class Service</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+            <div class="about-card">
+              <img src="image3.jpg" alt="Best Price Guarantee">
+              <h4>Best Price Guarantee</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destinations">
+        <div class="container">
+          <h2>Explore Our Destinations</h2>
+          <div class="destination-card-container">
+            <div class="destination-card">
+              <img src="image4.jpg" alt="Destination 1">
+              <h3>Maldives</h3>
+              <p>Amet consectetur adipiscing elit...</p>
+            </div>
+            <div class="destination-card">
+              <img src="image5.jpg" alt="Destination 2">
+              <h3>Indonesia</h3>
+              <p>Amet consectetur adipiscing elit...</p>
+            </div>
+            <div class="destination-card">
+              <img src="image6.jpg" alt="Destination 3">
+              <h3>Sri Lanka</h3>
+              <p>Amet consectetur adipiscing elit...</p>
+            </div>
+            </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Sign up for our newsletter to receive exclusive travel deals and tips.</p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </section>
   </main>

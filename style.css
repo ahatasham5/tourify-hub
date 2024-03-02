@@ -1,11 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
 body{
     margin-left: 250px;
     margin-right: 250px;
 }
-.Container{
+.navContainer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    width: 200px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.hub{
+    color: #FF5400;
 }
 .miniContainer{
     display: flex;
@@ -13,11 +26,18 @@ body{
 }
 
 nav{
+    font-family: 'Mulish', sans-serif;
     width: 300px;
+    
 }
 
 li{
-    list-style: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 1rem;
 }
 
 /*form */
@@ -28,16 +48,78 @@ li{
     background-position: center;
     padding: 50px 50px;
     border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  .formItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
+  .formItem h3, .formItem p{
+    color: #fff;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+  }
+  .formItem h3{
+    font-size: 3rem;
+    font-weight: 1000;
   }
   
   .form{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 7px;
+    display: flex;
     width: 60%;
-    justify-content: space-between;
+    justify-content: space-around;
+    border: none;
   }
+  .form input{
+    border: none;
+    width: 130px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .form button{
+    border:none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #FF5400;
+  }
+
+  /*nav part end*/
+  .popularTour{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+.popular{
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+}
+.popular h1{
+    font-size: 2.5rem;
+}
+.popular button{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    border:none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #FF5400;
+    width: 200px;
+    height: 75px;
+    font-size: 1.5rem;
+}
+
+/*image college */
 
   .image-collage {
     display: grid;
@@ -127,6 +209,51 @@ li{
     color: #333;
 }
 
+.hero {
+    background-image: url("path/to/your/image.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .hero button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .tours {
+    padding: 50px;
+  }
+  
+  .tours table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tours th, .tours td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
   
   footer {
     background-color: #f0f0f0;
