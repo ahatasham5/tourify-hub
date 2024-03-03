@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
-body{
+main, header{
     margin-left: 250px;
     margin-right: 250px;
 }
@@ -274,32 +274,50 @@ a{
     cursor: pointer;
   }
   
-  .tours {
-    padding: 50px;
+  .subContainer{
+    display: flex;
+    justify-content: space-between;
   }
-  
-  .tours table {
+
+  .subImage{
+    position:relative
+  }
+.subscribe{
+  border: #FF5400 solid;
+}
+.subForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subImage img{
     width: 100%;
-    border-collapse: collapse;
-  }
+    height: 100%;
+}
+.subImageText{
+  background-color: #FF5400;
+  position: absolute;
+  right: 15px;
+  bottom: 35px;
+  width: 175px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  transform: rotate(-25deg);
+  padding: 5px;
+}
   
-  .tours th, .tours td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  footer {
+  .footer {
     background-color: #f0f0f0;
     padding: 40px 0;
     text-align: center;
+    border: #000 solid;
   }
   
   .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1000px;
     margin: 0 auto;
   }
   
