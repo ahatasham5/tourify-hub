@@ -5,6 +5,15 @@ main, header{
     margin-left: 250px;
     margin-right: 250px;
 }
+
+@media (max-width: 768px) {
+  main, header {
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+}
+
 .navContainer{
     display: flex;
     justify-content: space-between;
@@ -16,6 +25,13 @@ main, header{
     font-family: 'Mulish', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+.logo img{
+  height: 50px;
 }
 .hub{
     color: #FF5400;
@@ -38,6 +54,46 @@ a{
     text-decoration: none;
     color: #424247;
     font-size: 1rem;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  top: 70px;
+}
+
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .miniContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .miniContainer.active {
+    display: block;
+  }
+
+  .miniContainer li {
+    margin: 5px;
+  }
+
 }
 
 /*form */
@@ -92,6 +148,27 @@ a{
     background-color: #FF5400;
   }
 
+  @media (max-width: 600px) {
+    .form{
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 90%;
+    }
+    .form input, .form button{
+      border: none;
+      width: 90%;
+      height: 30px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .form button{
+      width: 95%;
+    }
+  
+  }
+
   /*nav part end*/
   .popularTour{
     display: flex;
@@ -99,10 +176,24 @@ a{
     gap: 20px;
   }
 
+  @media (max-width: 600px) {
+    .popularTour{
+      display: block;
+      margin-bottom: 50px;
+      gap: 20px;
+    }
+  }
+
 .popular{
     position: relative;
     font-family: 'Mulish', sans-serif;
+    height: 400px;
+}
+@media (max-width:600px) {
+  .popular{
     height: 500px;
+  }
+  
 }
 .popular h1{
     font-size: 2.5rem;
@@ -113,13 +204,14 @@ a{
     left: 0px;
 
     border:none;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     background-color: #FF5400;
-    width: 200px;
-    height: 75px;
+    width: 150px;
+    height: 50px;
     font-size: 1.5rem;
 }
+
 .popularImage{
     position: relative;
 }
@@ -133,12 +225,50 @@ a{
     flex: 1; 
 }
 
+@media (max-width: 600px) {
+
+  .popular,
+  .popularImage {
+    flex: 0;
+  }
+
+  .popular {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .popular h1 {
+    font-size: 2.5rem;
+  }
+
+  .popular button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .popularImage {
+    position: relative;
+    height: 400px;
+    padding-bottom: 0;
+  }
+}
 /*image college */
 
 .row1{
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .row1{
+    display: block;
+  }
+  .image-container{
+    height: 250px;
+    margin-bottom: 20px;
+  }
 }
 
 .image-container {
@@ -170,11 +300,17 @@ a{
 }
 
 
-/* No specific styles needed for the third row layout here */
-
-
 .why-choose-us {
     text-align: center;
+}
+.whyUsContainer{
+  display: flex;
+}
+@media (max-width: 600px) {
+  .whyUsContainer{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .container {
@@ -204,6 +340,12 @@ a{
     padding: 20px;
     text-align: left;
 }
+@media (max-width: 600px) {
+  .card{
+    width: 300px;
+    height: 250px;
+  }
+}
 .center{
     display: flex;
     justify-content: center;
@@ -211,7 +353,7 @@ a{
 
 .card img {
     width: 100%;
-    height: 150px; /* Adjust as needed */
+    height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -236,6 +378,15 @@ a{
     height: 450px;
     margin-top: 50px;
   }
+@media (max-width: 600px) {
+  .OuterImage{
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    height: 500px;
+  }
+
+}
 .trans{
     transform: scaleX(-1);
 }
@@ -251,7 +402,20 @@ a{
     height: 300px;
     margin-top: 50px;
   }
-  
+@media (max-width: 600px) {
+  .whiteBox{
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .trans{
+    transform: none;
+    transform: translate(-50%);
+  }
+  .OuterImage{
+    transform: none;
+  }
+}
   .OuterImage h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -277,14 +441,55 @@ a{
   .subContainer{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 600px) {
+    .subContainer{
+      display: block;
+    }
   }
 
   .subImage{
     position:relative
   }
 .subscribe{
+  padding-left: 10px;
+  padding-right: 10px;
   border: #FF5400 solid;
+  font-family: 'Mulish',sans-serif;
+  border-radius: 10px;
 }
+@media (max-width:600px) {
+  .subscribe{
+    margin-bottom: 20px;
+  }
+}
+.subscribe h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.subscribe p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.subForm input[type="text"],
+.subForm input[type="email"],
+.subForm input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.subForm input[type="submit"]{
+  background-color: #FF5400;
+}
+
 .subForm{
   display: flex;
   flex-direction: column;
@@ -307,35 +512,47 @@ a{
   padding: 5px;
 }
   
-  .footer {
+ .footer {
     background-color: #f0f0f0;
     padding: 40px 0;
     text-align: center;
-    border: #000 solid;
+    display: flex;
+    flex-direction: column;
   }
   
-  .footer-container {
+  .bottomLogo{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .bottomLogo img{
+    height: 50px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     margin: 0 auto;
+    width: 450px;
+    border-bottom: #333 solid;
   }
-  
-  .footer-info,
-  .footer-contact,
-  .footer-social {
-    flex: 1;
-    padding: 10px;
+  @media (max-width: 600px) {
+    .footer-container{
+      width: 400px;
+    }
   }
-  
-  .footer-info img {
-    width: 150px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-info p {
-    color: #666;
-    line-height: 1.5;
+
+  .footer-info{
+    border: #000 solid;
+    width: 300px;
   }
   
   .footer-contact h3,
@@ -347,11 +564,11 @@ a{
     color: #333;
     line-height: 1.5;
   }
-  
   .footer-social a {
     color: #333;
     margin-right: 10px;
     font-size: 20px;
+
   }
   
   .footer-social a:hover {
@@ -367,8 +584,7 @@ a{
   .copyright p {
     color: #333;
   }
-  
-  /* Font Awesome icons (you can replace these with your preferred social media icons) */
+ 
   .fab {
     font-family: FontAwesome;
   }
