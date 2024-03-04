@@ -215,6 +215,12 @@ a{
 .popularImage{
     position: relative;
 }
+.video video{
+  position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 .popularImage img{
     position: absolute;
     right: 0;
@@ -253,6 +259,7 @@ a{
     padding-bottom: 0;
   }
 }
+
 /*image college */
 
 .row1{
@@ -299,12 +306,37 @@ a{
     width: 70%;
 }
 
+.image-text-video {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  animation: fadeOut 4s forwards;
+}
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
 
 .why-choose-us {
     text-align: center;
 }
 .whyUsContainer{
   display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
 @media (max-width: 600px) {
   .whyUsContainer{
@@ -330,15 +362,26 @@ a{
 
 .card-container {
     display: flex;
+    justify-content: space-around;
 }
 
 .card {
-    width: 45%;
-    background-color: rgba(251, 181, 99, 0.05);
+    width: 35%;
+    background-color: rgba(251, 181, 99, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
     text-align: left;
+    font-family: 'Mulish', sans-serif;
+    height: 200px;
+}
+.card2{
+  background-color: rgba(41, 206, 246, 0.1);
+  border-color: rgba(41, 206, 246, 1);
+}
+.card3{
+  background-color: rgba(233, 68, 68, 0.1);
+  border-color: rgba(233, 68, 68, 1);
 }
 @media (max-width: 600px) {
   .card{
@@ -352,19 +395,19 @@ a{
 }
 
 .card img {
-    width: 100%;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
 .card h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 1000;
 }
 
 .card p {
     color: #333;
+    font-size: .75rem;
 }
 
 .OuterImage {
@@ -376,7 +419,7 @@ a{
     align-items: center;
     color: rgb(0, 0, 0);
     height: 450px;
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
 @media (max-width: 600px) {
   .OuterImage{
@@ -518,6 +561,13 @@ a{
     text-align: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Mulish', sans-serif;
+  }
+  .gap{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .bottomLogo{
@@ -558,16 +608,17 @@ a{
   .footer-contact h3,
   .footer-social h3 {
     margin-bottom: 10px;
+    font-family: 'Mulish',sans-serif;
   }
   
   .footer-contact p {
     color: #333;
     line-height: 1.5;
   }
-  .footer-social a {
+  .footer-social img {
     color: #333;
     margin-right: 10px;
-    font-size: 20px;
+    width: 20px;
 
   }
   
@@ -578,11 +629,6 @@ a{
   .copyright {
     margin-top: 20px;
     padding: 10px 0;
-    background-color: #ddd;
-  }
-  
-  .copyright p {
-    color: #333;
   }
  
   .fab {
